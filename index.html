@@ -1,5 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<title>这是第一个程序练习</title>
-  <h1>这里可以显示出实际的运行效果来了</h1>
+<head>
+  <meta charset="utf-8"/>
+  <title>Marked in the browser</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.6/marked.js"></script>
+  <link rel="stylesheet" href="http://typo.sofi.sh/typo.css">
+  <meta name="viewport" >
+           
+           
+  <style>
+    body {
+      padding:20px
+    }
+    </style>
+</head>
+<body>
+  <div id="content"></div>
+  <script>
+    var html='# Marked in browser\n\nRendered by **marked**.\n\n >不需要相信网上的名人名言-鲁迅';
+    document.getElementById('content').innerHTML =
+      marked(html);
+  </script>
+</body>
 </html>
